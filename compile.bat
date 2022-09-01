@@ -1,0 +1,2 @@
+windres.exe -J rc -O coff -i Time.rc -o TimeIcon.res
+gcc *.c -Wall -O2 -L "E:\Tsy azo fafana\Program Files\MinGW\SDL-1.2.15\lib" -o Time.exe TimeIcon.res -I "E:\Tsy azo fafana\Program Files\MinGW\SDL-1.2.15\include" -s -lmingw32 -lSDLmain -lSDL.dll -lSDL_ttf -luser32 -lgdi32 -lwinmm -ldxguid -mwindows

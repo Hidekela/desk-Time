@@ -1,0 +1,10 @@
+.vscode/*
+obj/*
+setup/*
+*.exe
+*.ico
+*.cbp
+*.depend
+*.layout
+*.res
+
