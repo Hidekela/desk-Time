@@ -29,7 +29,7 @@ void createMainWindow(Window *window)
         exit(EXIT_FAILURE);
     }
 
-    SetWindowPos(FindWindow("SDL_app","Time"),HWND_TOPMOST,1024-window->position.w,768-window->position.h,window->position.w,window->position.h,SWP_SHOWWINDOW);
+    SetWindowPos(FindWindow("SDL_app","Time"),HWND_TOPMOST,GetSystemMetrics(SM_CXSCREEN)-window->position.w,GetSystemMetrics(SM_CYSCREEN)-window->position.h,window->position.w,window->position.h,SWP_SHOWWINDOW);
 }
 
 void createText(Text *text, const char *content, const char *fontPath, int size, SDL_Color color)
